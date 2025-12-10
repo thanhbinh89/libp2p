@@ -68,6 +68,8 @@ def main():
 
     port1 = lib.p2p_get_port_stream(inst, DEV1)
     # port2 = lib.p2p_get_port_stream(inst, DEV2)
+    print(f"Device {DEV1.decode()} streaming on UDP port: {port1}")
+    # print(f"Device {DEV2.decode()} streaming on UDP port: {port2}")
 
     try:
         while loop_enable:
